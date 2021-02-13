@@ -39,6 +39,45 @@ packageVersion("pwhois")
 
 ```
 
+A basic query:
+
+```{ex-01}
+(res <- whois("17.253.144.10"))
+
+str(tidy_pwhois(res), 1)
+```
+
+The Prefix WhoIs project supports some advanced queries including the ability to search on any of their WHOIS registry fields:
+
+```{r ex-02}
+(res <- whois("registry org-name=apple, inc"))
+
+tibble::as_tibble(tidy_pwhois(res))
+```
+
+and can return results in different formats including Team Cymru tables:
+
+```{r ex-03}
+(res <- whois('type=cymru 17.253.144.10'))
+
+str(tidy_cymru(res), 1)
+```
+
+That `tidy_cymru()` function can be used on responses from the Team Cymru 
+WHOIS service as well:
+
+```{r ex-03a}
+(res <- whois('-v AS23028', "whois.cymru.com"))
+
+str(tidy_cymru(res))
+```
+
+The Prefix WhoIs project can also return responses in Routing Policy Specification Language (RPSL), but there is no 'tidy' function for this format yet:
+
+```{r ex-04}
+whois('type=rpsl 17.253.144.10') 
+```
+
 ## pwhois Metrics
 
 ```{r cloc, echo=FALSE}

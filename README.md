@@ -44,6 +44,8 @@ remotes::install_git("https://git.rud.is/hrbrmstr/pwhois.git")
 remotes::install_gitlab("hrbrmstr/pwhois")
 # or
 remotes::install_bitbucket("hrbrmstr/pwhois")
+# or
+remotes::install_github("hrbrmstr/pwhois")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the

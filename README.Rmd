@@ -25,9 +25,13 @@ hrbrpkghelpr::describe_ingredients()
 
 ## Installation
 
-```{r install-ex, results='asis', echo=FALSE, cache=FALSE}
-hrbrpkghelpr::install_block()
+There is now a Golang dependency, which means you're better off doing:
+
 ```
+git clone --recurse-submodules -j8 git@github.com:hrbrmstr/pwhois.git
+```
+
+and building from RStudio or the command line.
 
 ## Usage
 
@@ -76,6 +80,12 @@ The Prefix WhoIs project can also return responses in Routing Policy Specificati
 
 ```{r ex-04}
 whois('type=rpsl 17.253.144.10') 
+```
+
+Old-school WHOIS
+
+```{r ex-05}
+str(pwhois::whois_query("r-project.org"), 2)
 ```
 
 ## pwhois Metrics

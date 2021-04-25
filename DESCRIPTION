@@ -2,7 +2,7 @@ Package: pwhois
 Type: Package
 Title: Issue 'WHOIS' Queries and Process Various 'WHOIS' Resoponses
 Version: 0.1.0
-Date: 2021-02-13
+Date: 2021-04-24
 Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
            comment = c(ORCID = "0000-0001-5670-2640"))
@@ -20,6 +20,7 @@ URL: https://git.rud.is/hrbrmstr/pwhois
 BugReports: https://git.rud.is/hrbrmstr/pwhois/issues
 Encoding: UTF-8
 License: MIT + file LICENSE
+SystemRequirements: Golang
 Suggests: 
     covr, tinytest
 Depends: 
@@ -28,4 +29,5 @@ Imports:
     stringi,
     jsonlite
 Roxygen: list(markdown = TRUE)
+RequiresCompilation: yes
 RoxygenNote: 7.1.1

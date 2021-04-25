@@ -14,4 +14,6 @@
 #' @keywords internal
 #' @author Bob Rudis (bob@@rud.is)
 #' @import stringi
+#' @importFrom jsonlite fromJSON
+#' @useDynLib pwhois, .registration = TRUE
 "_PACKAGE"

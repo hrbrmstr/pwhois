@@ -3,4 +3,7 @@
 export(tidy_cymru)
 export(tidy_pwhois)
 export(whois)
+export(whois_query)
 import(stringi)
+importFrom(jsonlite,fromJSON)
+useDynLib(pwhois, .registration = TRUE)

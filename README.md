@@ -1,11 +1,4 @@
----
-output: rmarkdown::github_document
-editor_options: 
-  chunk_output_type: console
----
-
-
- [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
  [![Signed by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keybase.io/hrbrmstr)
  ![Signed commit %](https://img.shields.io/badge/Signed_Commits-100%25-lightgrey.svg)
   [![Linux build Status](https://travis-ci.org/hrbrmstr/pwhois.svg?branch=master)](https://travis-ci.org/hrbrmstr/pwhois)   
